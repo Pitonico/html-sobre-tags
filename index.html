@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="inicio"><mark>Tags HTML</mark></h1>
+    <hr/>
+    <h2>Indice</h2>
+    <ol>
+        <li><a href="#sobre-tags">O que são tags HTML</a></li>
+        <li><a href="#sobre-atributos">O que são atributos</a></li>
+        <li><a href="#blockxinline">Elemento de block (block) x Elemento de linha (inline)</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ol>
+    <hr>
+    <h2 id="sobre-tags">O que são tags HTML</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <p>São <b>marcações</b> utilizadas para informar ao navegador como será estruturado a página HTML.</p>
+    <blockquote><i>Elementos podem ter tags de abertura e fechamento separadas, como a div, ou uma mesma tag ser de abertura e fechamento, como a img.</i></blockquote>
+    <h2 id="sobre-atributos">O que são atributos</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <p>São utilizados para <b>personalizar</b> as tags, podendo modificar tanto sua estrutura quanto sua funcionalidade.</p>
+    <blockquote><i>Existem atributos que tem em quase todos as tags, como:</i>
+        <ul>
+            <li><b>id:</b> um identificador único para uma tag, podendo assim manipular via javascript aquela tag.</li>
+            <li><b>class:</b> podendo ter mais de uma classe com mesmo nome, é muito utilizado para aplicar estilo via css naquela tag através de um arquivo css ou dentro de uma tag style no html.</li>
+            <li><b>style:</b> utilizado para aplicar estilos css diretamente na tag, sem a necessidade de um arquivo css ou dentro de uma tag style no html.</li>
+        </ul>
+    </blockquote>
+    <h2 id="blockxinline"> Elemento de block (block) x Elemento de linha (inline)</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <h3> Block </h3>
+    <p>Ex: div e suas tags semânticas, p, h1, h2, ...</p>
+    <ul>
+        <li>Pode definir uma altura e/ou largura</li>
+        <li>Possui margem superior e inferior</li>
+        <li>Por padrão, sempre ocupará toda a largura do elemento pai</li>
+        <li>Mesmo definindo uma largura, o elemento abaixo nunca subirá para ocupar o espaço vazio</li>
+    </ul>
+    <h3> Inline </h3>
+    <p>Ex: span, a , img</p>
+    <ul>
+        <li>Não pode definir uma largura e/ou altura</li>
+        <li>Não possui margem superior e inferior</li>
+        <li>Ocupa a largura do contéudo</li>
+        <li>Os elementos inline e/ou inline-block abaixo sobem para ocupar os espaços vazios acima</li>
+    </ul>
+    <h3> Inline-Block </h3>
+    <ul>
+        <li>Podem definir uma largura e/ou altura</li>
+        <li>Os elementos inline e/ou inline-block abaixo sobem para ocupar os espaços vazios acima</li>
+    </ul>
+    <h2 id="tags">Tags</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <h3>Tags Semânticas</h3>
+    <p>São tags que para o html é uma div<sup>*</sup>, mas servem para guiar o desenvolvedor, criando uma semântica no código.</p>
+    <blockquote><i><sup>*</sup><strong>div</strong> é um elemento de bloco que serve para encapsular outros elementos.</i></blockquote>
+    <ul>
+        <li><strong>header:</strong> encapsular o cabeçalho</li>
+        <li><strong>nav:</strong> encapsular o menu de navegação</li>
+        <li><strong>article:</strong> encapsular o artigo em uma página</li>
+        <li><strong>main:</strong> encapsular o conteúdo principal da página</li>
+        <li><strong>aside:</strong> encapsular um canteúdo lateralmente</li>
+        <li><strong>footer:</strong> encapsular o rodapé</li>
+    </ul>
+    <h3>Outras tags</h3>
+    <ul>
+        <li><strong>p:</strong> parágrafo</li>
+        <li><strong>h1, h2, h3, h4, h5, h6:</strong> título na página</li>
+        <li><strong>ol:</strong> lista ordenada</li>
+        <li><strong>ul:</strong> lista não-ordenada</li>
+        <li><strong>li:</strong> item de uma lista</li>
+        <li><strong>blockquote:</strong> citação.</li>
+        <li><strong>img:</strong> imagem</li>
+        <li><strong>input:</strong> criar um caixa de entrada de dados</li>
+        <li><strong>br:</strong> quebrar uma linha</li>
+        <li><strong>i:</strong> aplicar itálico no <i>texto</i></li>
+        <li><strong>strong:</strong> aplicar negrito no <strong>texto</strong></li>
+        <li><strong>b:</strong> aplicar negrito no <b>texto</b></li>
+        <li><strong>sup:</strong> colcoar acima o <sup>texto</sup></li>
+        <li><strong>sub:</strong> colocar abaixo o <sub>texto</sub></li>
+        <li><strong>hr:</strong> cria uma linha demarcadora</li>
+        <li><strong>mark:</strong> destacar o texto com uma <mark>cor</mark></li>
+        <li><strong>pre:</strong> criar textos pre-formatados, no qual é bastante utilizado para inserir códigos <pre> function javaScript() { ... }</pre></li>
+        <li><strong>del:</strong> informa que aquele trecho foi deletado, riscando o <del>texto</del></li>
+        <li><strong>abbr:</strong> sublinhar uma palavra abreviada, como <abbr title="HyperText Markup Language">HTML</abbr></li>
+    </ul>
+    <p></p>
+    <h2 id="atributos">Atributos</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <ul>
+        <li><strong>href: </strong> inserir um link na tag a</li>
+        <li><strong>src: </strong> inserir em qual local, podendo ser um link ou na própria pasta do projeto, esta a imagem</li>
+        <li><strong>title: </strong> titulo ao passar o mouse emcima</li>
+        <li><strong>alt: </strong> definir um texto ao falhar a imagem</li>
+        <li><strong>height: </strong> definir uma altura para o elemento</li>
+        <li><strong>width: </strong> definir uma largura para o elemento</li>
+    </ul>
+    <h2 id="referencias">Referências</h2>
+    <p><a href="#inicio">Voltar</a></p>
+    <ul>
+        <li><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">homehost</a></li>
+        <li><a href="https://www.isbrasil.info/blog/conheca-as-principais-tags-semanticas-do-html5.html#:~:text=TAGs%20HTML5%201%20%3Csection%3E%20A%20se%C3%A7%C3%A3o%20do%20documento,%3Cmain%3E%20...%206%20%3Caside%3E%20...%207%20%3Cfooter%3E%20" target="_blank">isbrasil</a></li>
+        <li><a href="https://acervolima.com/diferenca-entre-elementos-de-bloco-e-elementos-inline/" target="_blank">acervolima</a></li>
+    </ul>
+</body>
+</html>
